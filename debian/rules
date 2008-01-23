@@ -1,0 +1,32 @@
+#!/usr/bin/make -f
+
+build: build-stamp
+build-stamp:
+	./configure --prefix=/usr --mandir=/usr/share/man
+	$(MAKE)
+	touch $@
+
+install: build
+	dh_clean -k
+	$(MAKE) DESTDIR=$(CURDIR)/debian/lcab install
+
+clean:
+	rm -f build-stamp
+	dh_clean
+	[ ! -f config.status ] || $(MAKE) distclean
+
+binary-indep:
+
+binary-arch binary: install
+	dh_installchangelogs -a
+	dh_installdocs -a
+	dh_installman -a
+	dh_compress -a
+	dh_fixperms -a
+	dh_strip -a
+	dh_shlibdeps -a
+	dh_gencontrol -a
+	dh_md5sums -a
+	dh_builddeb -a
+
+.PHONY: build install clean binary-indep binary-arch binary

@@ -1,0 +1,65 @@
+lcab (1.0b12-3) unstable; urgency=low
+
+  * New maintainer (Closes: #426304)
+  * New Standards-Version = 3.7.3
+  * Added the new Homepage field in debian/control
+  * Added automake1.7 as a build dependency and changed debhelper to (>=5.0.59)
+  * aclocal.m4 recreated (automake 1.7.9)
+  * Updated debian/compat (4-->6) 
+ 
+ -- César Gómez Martín <cesar.gomez@gmail.com>  Wed, 23 Jan 2008 14:41:15 +0000
+
+lcab (1.0b12-2) unstable; urgency=medium
+
+  * The distributed Makefile does not include a distclean target. Call
+    `make distclean' only if configure has been run. Closes: #451257.
+
+ -- Shaun Jackman <sjackman@debian.org>  Wed, 14 Nov 2007 11:27:03 -0700
+
+lcab (1.0b12-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update the watch file. Closes: #450213.
+  * Update config.guess and config.sub to 20070725.1.
+  * Update the Debian policy to version 3.7.2.2.
+  * Fix lintian warnings debian-rules-uses-pwd and
+    debian-rules-ignores-make-clean-error.
+
+ -- Shaun Jackman <sjackman@debian.org>  Wed,  7 Nov 2007 11:13:56 -0700
+
+lcab (1.0b11-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update config.guess and config.sub to 2006-02-23.
+  * Add a watch file.
+  * Update the Debian policy to version 3.6.2.2. No changes necessary.
+  * Clean up debian/rules.
+  * Bump debian/compat to version 4.
+
+ -- Shaun Jackman <sjackman@debian.org>  Thu,  6 Apr 2006 08:53:49 -0600
+
+lcab (1.0b10-2) unstable; urgency=low
+
+  * Suggest cabextract and refer to it in the manual page (Closes: #233279).
+
+ -- Shaun Jackman <sjackman@debian.org>  Wed, 18 Feb 2004 20:22:12 -0800
+
+lcab (1.0b10-1) unstable; urgency=low
+
+  * New upstream release. (Closes: #207188, #208483)
+
+ -- Shaun Jackman <sjackman@debian.org>  Tue, 30 Sep 2003 09:56:23 -0700
+
+lcab (1.0b9-1) unstable; urgency=low
+
+  * New upstream release
+  * lcab.1 (AUTHORS): Added a written-by line for the man page.
+
+ -- Shaun Jackman <sjackman@debian.org>  Tue, 19 Aug 2003 10:03:20 -0600
+
+lcab (1.0b8-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Shaun Jackman <sjackman@debian.org>  Wed, 13 Aug 2003 06:55:48 -0600
+

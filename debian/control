@@ -1,0 +1,15 @@
+Source: lcab
+Section: utils
+Priority: extra
+Maintainer: César Gómez Martín <cesar.gomez@gmail.com>
+Build-Depends: debhelper (>=5.0.59)
+Standards-Version: 3.7.3
+Homepage: http://coding.wooyayhoopla.be/lcab/
+
+Package: lcab
+Architecture: any
+Depends: ${shlibs:Depends}
+Suggests: cabextract
+Description: create cabinet (.cab) archives
+ lcab is a small program for Linux that creates a cabinet (.cab)
+ archive from a set of input files. 

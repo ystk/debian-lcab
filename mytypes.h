@@ -49,6 +49,6 @@ typedef unsigned long int CHECKSUM;
 #define CFO_START               (0x24)		/* folder offset */
 #define CFI_START               (0x2C)  	/* file offset */
 
-#define VERSION			"1.0b11"
+#define VERSION			"1.0b12"
 
 #endif
