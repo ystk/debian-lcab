@@ -1,0 +1,129 @@
+lcab (1.0b12-7) unstable; urgency=low
+
+  * debian/copyright
+    - (Comment): Adjust wording.
+  * debian/watch
+    - Update URL to mirror.ohnopub.net (Closes: #703288).
+
+ -- Jari Aalto <jari.aalto@cante.net>  Mon, 18 Mar 2013 09:55:56 +0200
+
+lcab (1.0b12-6) unstable; urgency=low
+
+  * debian/clean
+    - Clean up files by autoreconf etc. in debian/rules.
+  * debian/control
+    - (Homepage): Update URL to Freecode.
+    - (Standards-Version): Update to 3.9.4.
+  * debian/copyright
+    - Update year. Add Freecode URL.
+  * debian/patches
+    - (20): New. Synchronize version number with Debian (Closes: #694268).
+
+ -- Jari Aalto <jari.aalto@cante.net>  Thu, 28 Feb 2013 10:49:26 +0200
+
+lcab (1.0b12-5) unstable; urgency=low
+
+  * debian/clean
+    - New file.
+  * debian/control
+    - (Build-Depends): Rm dpkg-dev; not needed with debhelper 9.
+    - (Homepage): Update address. Closes LP#696304 (done in 1.0b12-4)
+    - (Standards-Version): Update to 3.9.3.1.
+  * debian/copyright
+    - Update to format 1.0.
+  * debian/rules
+    - Move override_dh_auto_clean to debian/clean.
+    - Enable all hardening flags.
+    - Use DEB_*_MAINT_* variables.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Wed, 04 Apr 2012 10:11:01 +0300
+
+lcab (1.0b12-4) unstable; urgency=low
+
+  * New maintainer.
+    - Update to format 3.0
+  * debian/clean
+    - New file
+  * debian/compat
+    - Update to 9
+  * debian/control
+    - (Build-Depends): Update to debhelper 9. Add dpkg-dev 1.16.1,
+      autotools-dev.
+    - (Description): Extend.
+  * debian/copyright
+    - Update to DEP5.
+  * debian/install
+    - New file.
+  * debian/patches
+    - Convert all inline patches to quilt.
+  * debian/rules
+    - Update to dh(1) format.
+    - Use hardened CXXFLAGS (release goal).
+      http://wiki.debian.org/ReleaseGoals/SecurityHardeningBuildFlags
+
+ -- Jari Aalto <jari.aalto@cante.net>  Fri, 10 Feb 2012 13:23:49 -0500
+
+lcab (1.0b12-3) unstable; urgency=low
+
+  * New maintainer (Closes: #426304)
+  * New Standards-Version = 3.7.3
+  * Added the new Homepage field in debian/control
+  * Added automake1.7 as a build dependency and changed debhelper to (>=5.0.59)
+  * aclocal.m4 recreated (automake 1.7.9)
+  * Updated debian/compat (4-->6)
+
+ -- César Gómez Martín <cesar.gomez@gmail.com>  Wed, 23 Jan 2008 14:41:15 +0000
+
+lcab (1.0b12-2) unstable; urgency=medium
+
+  * The distributed Makefile does not include a distclean target. Call
+    `make distclean' only if configure has been run. Closes: #451257.
+
+ -- Shaun Jackman <sjackman@debian.org>  Wed, 14 Nov 2007 11:27:03 -0700
+
+lcab (1.0b12-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update the watch file. Closes: #450213.
+  * Update config.guess and config.sub to 20070725.1.
+  * Update the Debian policy to version 3.7.2.2.
+  * Fix lintian warnings debian-rules-uses-pwd and
+    debian-rules-ignores-make-clean-error.
+
+ -- Shaun Jackman <sjackman@debian.org>  Wed,  7 Nov 2007 11:13:56 -0700
+
+lcab (1.0b11-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update config.guess and config.sub to 2006-02-23.
+  * Add a watch file.
+  * Update the Debian policy to version 3.6.2.2. No changes necessary.
+  * Clean up debian/rules.
+  * Bump debian/compat to version 4.
+
+ -- Shaun Jackman <sjackman@debian.org>  Thu,  6 Apr 2006 08:53:49 -0600
+
+lcab (1.0b10-2) unstable; urgency=low
+
+  * Suggest cabextract and refer to it in the manual page (Closes: #233279).
+
+ -- Shaun Jackman <sjackman@debian.org>  Wed, 18 Feb 2004 20:22:12 -0800
+
+lcab (1.0b10-1) unstable; urgency=low
+
+  * New upstream release. (Closes: #207188, #208483)
+
+ -- Shaun Jackman <sjackman@debian.org>  Tue, 30 Sep 2003 09:56:23 -0700
+
+lcab (1.0b9-1) unstable; urgency=low
+
+  * New upstream release
+  * lcab.1 (AUTHORS): Added a written-by line for the man page.
+
+ -- Shaun Jackman <sjackman@debian.org>  Tue, 19 Aug 2003 10:03:20 -0600
+
+lcab (1.0b8-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Shaun Jackman <sjackman@debian.org>  Wed, 13 Aug 2003 06:55:48 -0600

@@ -1,0 +1,22 @@
+From a65a3bf14e8f6a3f3c4e2d24f891fdf96983b46f Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Fri, 10 Feb 2012 13:05:51 -0500
+Subject: [PATCH] lcab.1: update URL
+Organization: Private
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
+ lcab.1 |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/lcab.1
++++ b/lcab.1
+@@ -29,4 +29,4 @@
+ \fBcabextract\fR(1)
+ extract files from Microsoft cabinet (.cab) archives
+ .P
+-http://www.geekshop.be/rien/lcab/
++http://ohnopub.net/~ohnobinki/lcab

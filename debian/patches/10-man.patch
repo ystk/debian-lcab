@@ -1,0 +1,32 @@
+From 57eaed00261d635d0531502687f8d91ce8314710 Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Fri, 10 Feb 2012 12:03:40 -0500
+Subject: [PATCH] mention cabextract
+Organization: Private
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
+ lcab.1 |    6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+--- a/lcab.1
++++ b/lcab.1
+@@ -1,6 +1,6 @@
+ .TH LCAB "1" "August 2003" "lcab 1.0b8"
+ .SH NAME
+-lcab \- Create cabinet (.cab) files.
++lcab \- create cabinet (.cab) archives
+ .SH SYNOPSIS
+ .B lcab
+ [\fIOPTION\fR]... \fISOURCE\fR... \fICABFILE\fR
+@@ -25,4 +25,8 @@
+ for the Debian GNU/Linux system.
+ 
+ .SH "SEE ALSO"
++.TP
++\fBcabextract\fR(1)
++extract files from Microsoft cabinet (.cab) archives
++.P
+ http://www.geekshop.be/rien/lcab/

@@ -1,0 +1,41 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0
+X-Format: http://dep.debian.net/deps/dep5
+Upstream-Name: lcab
+Upstream-Contact: Nathan Phillip Brink <ohnobinki@ohnopublishing.net>
+Source: http://freecode.com/projects/lcab
+X-Source: http://ohnopub.net/~ohnobinki/lcab
+X-Upstream-Bugs: https://ohnopub.net/bugzilla
+X-Upstream-Comment:
+ Nathan is the Gentoo package maintainer.
+
+Files: *
+Copyright:
+  2001 Rien Croonenborghs <rien@geekshop.be> (email not reachable)
+  2001 Ben Kibbey
+  2003 Shaun Jackman
+  2004 Ivan Brozovic
+License: GPL-2+
+
+Files: debian/*
+Copyright:
+  2012-2013 Jari Aalto <jari.aalto@cante.net>
+  2008 César Gómez Martín <cesar.gomez@gmail.com>
+  2003, 2004, 2006, 2007 Shaun Jackman <sjackman@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License can be found in "/usr/share/common-licenses/GPL-2".

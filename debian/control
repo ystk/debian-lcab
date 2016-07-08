@@ -1,0 +1,21 @@
+Source: lcab
+Section: utils
+Priority: extra
+Maintainer: Jari Aalto <jari.aalto@cante.net>
+Build-Depends: debhelper (>= 9), autotools-dev, autoconf, automake
+Standards-Version: 3.9.4
+Vcs-Browser: http://git.debian.org/?p=collab-maint/lcab.git
+Vcs-Git: git://git.debian.org/git/collab-maint/lcab.git
+Homepage: http://freecode.com/projects/lcab
+
+Package: lcab
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: cabextract
+Description: create cabinet (.cab) archives
+ lcab is a small program for Linux that creates a cabinet (.cab)
+ archive from a set of input files.
+ .
+ CAB format represents the Microsoft Windows compressed archive
+ format. It is used for compression and digital signing by a variety
+ of Microsoft installation programs

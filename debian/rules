@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS	= hardening=+all
+export DEB_CFLAGS_MAINT_APPEND	= -Wall -pedantic
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+# due to autoreconf(1)
+FILE_LIST_PRESERVE = \
+ Makefile \
+ Makefile.in \
+ aclocal.m4 \
+ config.h.in \
+ configure \
+ depcomp \
+ install-sh \
+ missing \
+ mkinstalldirs \
+
+include debian/debian-save-restore.mk
+
+override_dh_auto_configure:
+	$(file-state-save)
+	cp -v /usr/share/misc/config.sub .
+	cp -v /usr/share/misc/config.guess .
+	autoreconf -fi
+	dh_auto_configure
+
+override_dh_auto_build:
+	dh_auto_build
+	$(file-state-restore-copy)
+
+%:
+	dh $@
+
+# End of file
